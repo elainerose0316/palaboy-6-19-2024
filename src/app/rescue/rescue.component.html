@@ -1,0 +1,94 @@
+<div class="container-fluid p-5 row justify-content-center source-sans" *ngFor="let item of rescue">
+  <div class="col-md-8">
+    <h1 class="text-center  nonito">
+      <b>{{item.title[0]}}</b>
+    </h1>
+    <p class="text-center  nonito"><b>{{item.title[1]}}</b></p>
+  </div>
+  <div class="container-fluid d-flex justify-content-center p-3 row">
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito" ><b>{{item.box_1[0]}}</b></h4>
+        <p class="p-0 m-0">
+          <b>{{item.box_1[1]}}</b>
+        </p>
+        <ul class="p-0 m-0">
+          <li>{{item.box_1[2]}}</li>
+          <li>{{item.box_1[3]}}</li>
+          <li>{{item.box_1[4]}}</li>
+          <li>{{item.box_1[5]}}</li>
+          <li>{{item.box_1[6]}}</li>
+          <li>{{item.box_1[7]}}</li>
+          <li>{{item.box_1[8]}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito">
+          <b>{{item.box_2[0]}}</b>
+        </h4>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_2[1]}}
+        </p>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_2[2]}}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito">
+          <b>{{item.box_3[0]}}</b>
+        </h4>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_3[1]}}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito"><b>{{item.box_4[0]}}</b></h4>
+        <p class="p-0 m-0 text-justify pb-3">
+          {{item.box_4[1]}}
+        </p>
+        <p class="p-0 m-0 text-justify">{{item.box_4[2]}}</p>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_4[3]}}
+        </p>
+        <p class="p-0 m-0 text-justify pb-3">
+          {{item.box_4[4]}}
+        </p>
+        <p class="p-0 m-0 text-justify">{{item.box_4[5]}}</p>
+       
+      </div>
+    </div>
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito"><b>{{item.box_5[0]}}</b></h4>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_5[1]}}
+        </p>
+        <p class="p-0 m-0 text-justify pb-3">
+          {{item.box_5[2]}}
+        </p>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_5[3]}}
+        </p>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_5[4]}}
+        </p>
+        <p class="p-0 m-0 text-justify">
+          {{item.box_5[5]}}
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 pb-3">
+      <div class="container-fluid rounded-3 shadow bg-green p-5">
+        <h4 class="text-center pb-3  nonito"><b>{{item.box_6[0]}}</b></h4>
+        <p class="p-0 m-0 text-justify">{{item.box_6[1]}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,96 @@
+<div class="main-container source-sans">
+        <!-- <form action="">
+                <div class="contact-form  mg-x">    
+                        <h1>Contact Us</h1>
+                        <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Message</label>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit">
+
+                </div>
+        </form> -->
+        <div class="text-contact-us  nonito"><h1>Contact Us</h1></div>
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="contact-form mg-x">
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email">
+                    <label for="email">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" formControlName="subject">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="message" formControlName="message"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Submit" [disabled]="contactForm.invalid">
+                </div>
+              </form>
+              
+       
+       
+        <div class="contact-container">
+                <div class="organization">
+                        <div class="logo">
+                                <img src="assets/fairylogo.png" alt="">
+                        </div>
+                        <div class="contacts">
+                                <div class="email">
+                                        <img src="assets/mail.png" alt="">
+                                        <p>EYFairies@gmail.com</p>
+                                </div>
+                                <div class="location">
+                                        <img src="assets/location.png" alt="">
+                                        <p>551 M.F. Jhocson St. Sampaloc, Manila, PH 1008 </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="organization">
+                        <div class="logo">
+                                <img src="assets/nulogo.png" alt="">
+                        </div>
+                        <div class="contacts">
+                                <div class="email">
+                                        <img src="assets/mail.png" alt="">
+                                        <p>EYFairies@gmail.com</p>
+                                </div>
+                                <div class="location">
+                                        <img src="assets/location.png" alt="">
+                                        <p>551 M.F. Jhocson St. Sampaloc, Manila, PH 1008 </p>
+                                </div>
+                        </div>
+                </div>
+                <div class="organization">
+                        <div class="logo">
+                                <img src="assets/clientlogo.png" alt="">
+                        </div>
+                        <div class="contacts">
+                                <div class="email">
+                                        <img src="assets/mail.png" alt="">
+                                        <p>EYFairies@gmail.com</p>
+                                </div>
+                                <div class="location">
+                                        <img src="assets/facebook.png" alt="">
+                                        <p>facebook.com/groups/178694082232305</p>
+                                </div>
+                                <div class="location">
+                                        <img src="assets/web.png" alt="">
+                                        <p>arrfdavao.helixpay.ph</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+<app-footer></app-footer>

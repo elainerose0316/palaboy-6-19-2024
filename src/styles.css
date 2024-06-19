@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&family=Source+Sans+3&display=swap');
+
+.nonito{
+        font-family: 'Nunito', sans-serif;
+}
+
+.source-sans b{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.source-sans p{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+html:not(.exclude-bg),
+body:not(.exclude-bg) {
+    font-family: "Source Sans Pro";
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.bg-green {
+    background-color: #e4faeb97;
+}
+
+.credits {
+    background-color: #f7e9c3;
+}
+
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-big {
+    font-size: 5em;
+}
+
+.resizable-input {
+    resize: both;
+}
