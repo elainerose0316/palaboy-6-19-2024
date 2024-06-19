@@ -35,7 +35,7 @@ app.disable('x-powered-by');
 
 app.use(helmet.contentSecurityPolicy({
         directives: {
-        defaultSrc: ["'self'", "http://localhost"], 
+        defaultSrc: ["'self'", "http://localhost", "https://www.youtube.com"], 
         scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'"],
         styleSrc: ["'self'","'unsafe-inline'"],
         imgSrc: ["'self'", "data:", "blob:", "'unsafe-inline'"],
